@@ -1,6 +1,9 @@
 #!/bin/sh
 
 export XDG_CURRENT_DESKTOP=i3
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export DMODIFIERS="@im=fcitx"
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap

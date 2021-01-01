@@ -23,7 +23,7 @@
 	- variety
 	- polybar
 	- pnmixer
-	- fcitx
+	- fcitx & fcitx-im & fcitx-configtool & fcitx-googlepinyin
 	- ranger
 	- tree
 4. Other Tools
