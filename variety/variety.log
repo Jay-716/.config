@@ -1,0 +1,868 @@
+INFO: 2021-01-01 22:07:09,813: main() 'Using profile folder /home/jay/.config/variety/'
+INFO: 2021-01-01 22:07:09,857: perform_upgrade() 'Last run version was 0.8.5 or earlier, current version is 0.8.5'
+INFO: 2021-01-01 22:07:10,572: process_command() 'Received command: []'
+INFO: 2021-01-01 22:07:10,576: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
+INFO: 2021-01-01 22:07:10,644: start() 'Using data_path /usr/share/variety'
+INFO: 2021-01-01 22:07:10,644: load() 'Jumble loading'
+INFO: 2021-01-01 22:07:10,658: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.9/site-packages/variety/plugins/builtin/__init__.py'
+INFO: 2021-01-01 22:07:10,687: _walk_modules() 'Jumble loading module in FortuneSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/quotes/FortuneSource.py'
+INFO: 2021-01-01 22:07:10,690: load() 'Jumble found plugin class: <class 'FortuneSource.FortuneSource'>: {'name': 'UNIX fortune program', 'description': 'Displays quotes using the UNIX fortune program. You may want to install additional fortune packs, e.g. fortunes-bofh-excuses.', 'author': 'Dan Jones', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,691: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/quotes/LocalFilesSource.py'
+INFO: 2021-01-01 22:07:10,703: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,705: _walk_modules() 'Jumble loading module in UrbanDictionarySource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/quotes/UrbanDictionarySource.py'
+INFO: 2021-01-01 22:07:10,707: load() 'Jumble found plugin class: <class 'UrbanDictionarySource.UrbanDictionarySource'>: {'name': 'Urban Dictionary', 'description': 'Displays definitions from Urban Dictionary', 'author': 'James Miller', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,707: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.9/site-packages/variety/plugins/builtin/quotes/__init__.py'
+INFO: 2021-01-01 22:07:10,710: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/quotes/QuotationsPageSource.py'
+INFO: 2021-01-01 22:07:10,762: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': 'Fetches quotes from TheQuotationsPage.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,764: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/quotes/GoodreadsSource.py'
+INFO: 2021-01-01 22:07:10,766: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': 'Fetches quotes from Goodreads.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,781: _walk_modules() 'Jumble loading module in WallhavenSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/WallhavenSource.py'
+INFO: 2021-01-01 22:07:10,804: load() 'Jumble found plugin class: <class 'WallhavenSource.WallhavenSource'>: {'name': 'WallhavenSource', 'description': 'Configurable source for fetching images from Wallhaven.cc', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,805: _walk_modules() 'Jumble loading module in UnsplashDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/UnsplashDownloader.py'
+INFO: 2021-01-01 22:07:10,807: load() 'Jumble found plugin class: <class 'UnsplashDownloader.UnsplashDownloader'>: {'name': 'UnsplashDownloader', 'description': 'High-resolution photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,808: _walk_modules() 'Jumble loading module in WallhavenDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py'
+INFO: 2021-01-01 22:07:10,811: _walk_modules() 'Jumble loading module in MediaRSSSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/MediaRSSSource.py'
+INFO: 2021-01-01 22:07:10,815: load() 'Jumble found plugin class: <class 'MediaRSSSource.MediaRSSSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from MediaRSS feeds', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,816: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/__init__.py'
+INFO: 2021-01-01 22:07:10,818: _walk_modules() 'Jumble loading module in UnsplashConfigurableSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/UnsplashConfigurableSource.py'
+INFO: 2021-01-01 22:07:10,821: load() 'Jumble found plugin class: <class 'UnsplashConfigurableSource.UnsplashConfigurableSource'>: {'name': 'UnsplashConfigurableSource', 'description': 'Configurable source for fetching photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,823: _walk_modules() 'Jumble loading module in RedditSource from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/RedditSource.py'
+INFO: 2021-01-01 22:07:10,826: load() 'Jumble found plugin class: <class 'RedditSource.RedditSource'>: {'name': 'RedditSource', 'description': 'Configurable source for fetching images from Reddit', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,828: _walk_modules() 'Jumble loading module in BingDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/BingDownloader.py'
+INFO: 2021-01-01 22:07:10,830: load() 'Jumble found plugin class: <class 'BingDownloader.BingDownloader'>: {'name': 'BingDownloader', 'description': 'Bing Photo of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,831: _walk_modules() 'Jumble loading module in MediaRSSDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/MediaRSSDownloader.py'
+INFO: 2021-01-01 22:07:10,833: _walk_modules() 'Jumble loading module in EarthviewDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py'
+INFO: 2021-01-01 22:07:10,835: load() 'Jumble found plugin class: <class 'EarthviewDownloader.EarthviewDownloader'>: {'name': 'EarthviewDownloader', 'description': 'Google Earth View Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-01-01 22:07:10,835: _walk_modules() 'Jumble loading module in RedditDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/RedditDownloader.py'
+INFO: 2021-01-01 22:07:10,837: _walk_modules() 'Jumble loading module in APODDownloader from /usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/APODDownloader.py'
+INFO: 2021-01-01 22:07:10,839: load() 'Jumble found plugin class: <class 'APODDownloader.APODDownloader'>: {'name': 'APODDownloader', 'description': 'NASA Astro Pic of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+ERROR: 2021-01-01 22:07:10,843: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 794, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+ERROR: 2021-01-01 22:07:10,864: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 794, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+INFO: 2021-01-01 22:07:10,867: reload_config() 'Creating new downloader for type flickr, location user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2021-01-01 22:07:10,867: reload_config() 'Creating new downloader for type apod, location NASA's Astronomy Picture of the Day'
+INFO: 2021-01-01 22:07:10,868: reload_config() 'Creating new downloader for type bing, location Bing Photo of the Day'
+INFO: 2021-01-01 22:07:10,868: reload_config() 'Creating new downloader for type earthview, location Google Earth View Wallpapers'
+INFO: 2021-01-01 22:07:10,868: reload_config() 'Creating new downloader for type unsplash, location High-resolution photos from Unsplash.com'
+INFO: 2021-01-01 22:07:10,899: log_options() 'Loaded options:'
+INFO: 2021-01-01 22:07:10,899: log_options() 'change_enabled = True'
+INFO: 2021-01-01 22:07:10,899: log_options() 'change_interval = 300'
+INFO: 2021-01-01 22:07:10,899: log_options() 'change_on_start = False'
+INFO: 2021-01-01 22:07:10,900: log_options() 'clipboard_enabled = False'
+INFO: 2021-01-01 22:07:10,900: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2021-01-01 22:07:10,900: log_options() 'clipboard_use_whitelist = True'
+INFO: 2021-01-01 22:07:10,900: log_options() 'clock_date_font = Sans 20'
+INFO: 2021-01-01 22:07:10,900: log_options() 'clock_enabled = True'
+INFO: 2021-01-01 22:07:10,900: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2021-01-01 22:07:10,900: log_options() 'clock_font = Sans 70'
+INFO: 2021-01-01 22:07:10,900: log_options() 'configfile = /home/jay/.config/variety/variety.conf'
+INFO: 2021-01-01 22:07:10,900: log_options() 'copyto_enabled = False'
+INFO: 2021-01-01 22:07:10,901: log_options() 'copyto_folder = Default'
+INFO: 2021-01-01 22:07:10,901: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2021-01-01 22:07:10,901: log_options() 'desired_color_enabled = False'
+INFO: 2021-01-01 22:07:10,901: log_options() 'download_folder = /home/jay/.config/variety/Downloaded'
+INFO: 2021-01-01 22:07:10,901: log_options() 'download_preference_ratio = 0.9'
+INFO: 2021-01-01 22:07:10,901: log_options() 'favorites_folder = /home/jay/.config/variety/Favorites'
+INFO: 2021-01-01 22:07:10,901: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2021-01-01 22:07:10,901: log_options() 'fetched_folder = /home/jay/.config/variety/Fetched'
+INFO: 2021-01-01 22:07:10,901: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2021-01-01 22:07:10,901: log_options() 'icon = Light'
+INFO: 2021-01-01 22:07:10,902: log_options() 'lightness_enabled = False'
+INFO: 2021-01-01 22:07:10,902: log_options() 'lightness_mode = 0'
+INFO: 2021-01-01 22:07:10,902: log_options() 'min_rating = 4'
+INFO: 2021-01-01 22:07:10,902: log_options() 'min_rating_enabled = False'
+INFO: 2021-01-01 22:07:10,902: log_options() 'min_size = 80'
+INFO: 2021-01-01 22:07:10,902: log_options() 'min_size_enabled = False'
+INFO: 2021-01-01 22:07:10,902: log_options() 'quota_enabled = True'
+INFO: 2021-01-01 22:07:10,902: log_options() 'quota_size = 1000'
+INFO: 2021-01-01 22:07:10,902: log_options() 'quotes_authors = '
+INFO: 2021-01-01 22:07:10,902: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_bg_opacity = 55'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_change_enabled = False'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_change_interval = 300'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_enabled = False'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_favorites_file = /home/jay/.config/variety/favorite_quotes.txt'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_hpos = 100'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_max_length = 250'
+INFO: 2021-01-01 22:07:10,903: log_options() 'quotes_tags = '
+INFO: 2021-01-01 22:07:10,904: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2021-01-01 22:07:10,904: log_options() 'quotes_text_shadow = False'
+INFO: 2021-01-01 22:07:10,904: log_options() 'quotes_vpos = 40'
+INFO: 2021-01-01 22:07:10,904: log_options() 'quotes_width = 70'
+INFO: 2021-01-01 22:07:10,904: log_options() 'safe_mode = False'
+INFO: 2021-01-01 22:07:10,904: log_options() 'slideshow_custom_enabled = False'
+INFO: 2021-01-01 22:07:10,904: log_options() 'slideshow_custom_folder = /home/jay/Pictures'
+INFO: 2021-01-01 22:07:10,904: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2021-01-01 22:07:10,904: log_options() 'slideshow_fade = 0.4'
+INFO: 2021-01-01 22:07:10,904: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_monitor = All'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_pan = 0.05'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_seconds = 6.0'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_sort_order = Random'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_sources_enabled = True'
+INFO: 2021-01-01 22:07:10,905: log_options() 'slideshow_zoom = 0.2'
+INFO: 2021-01-01 22:07:10,905: log_options() 'smart_enabled = False'
+INFO: 2021-01-01 22:07:10,905: log_options() 'smart_notice_shown = False'
+INFO: 2021-01-01 22:07:10,905: log_options() 'smart_register_shown = False'
+INFO: 2021-01-01 22:07:10,906: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 'apod', "NASA's Astronomy Picture of the Day"], [True, 'bing', 'Bing Photo of the Day'], [True, 'earthview', 'Google Earth View Wallpapers'], [True, 'unsplash', 'High-resolution photos from Unsplash.com']]'
+INFO: 2021-01-01 22:07:10,906: log_options() 'stats_enabled = True'
+INFO: 2021-01-01 22:07:10,906: log_options() 'stats_notice_shown = False'
+INFO: 2021-01-01 22:07:10,906: log_options() 'sync_enabled = True'
+INFO: 2021-01-01 22:07:10,906: log_options() 'use_landscape_enabled = True'
+INFO: 2021-01-01 22:07:10,906: reload_config() 'No need to clear prepared queue'
+INFO: 2021-01-01 22:07:10,907: clock_thread_method() 'clock thread running'
+INFO: 2021-01-01 22:07:10,907: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:07:11,085: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 300'
+INFO: 2021-01-01 22:07:11,085: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:07:11,088: regular_change_thread() 'regular_change thread running'
+INFO: 2021-01-01 22:07:11,089: prepare_thread() 'Prepare thread running'
+INFO: 2021-01-01 22:07:11,089: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2021-01-01 22:07:11,089: prepare_thread() 'Preparing some images'
+INFO: 2021-01-01 22:07:11,090: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-01-01 22:07:11,090: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-01-01 22:07:11,091: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-01-01 22:07:11,091: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-01-01 22:07:11,091: download_one() 'Flickr: Downloading an image, config: user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2021-01-01 22:07:11,091: download_one() 'Flickr: Queue size: 0'
+INFO: 2021-01-01 22:07:11,091: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-01-01 22:07:11,091: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-01-01 22:07:11,091: download_one() 'Flickr: Filling queue'
+INFO: 2021-01-01 22:07:11,092: fetch() 'Making flickr API call: https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00'
+INFO: 2021-01-01 22:07:11,110: update_indicator_icon() 'Creating indicator'
+WARNING: 2021-01-01 22:07:11,174: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+INFO: 2021-01-01 22:07:11,176: create_indicator() 'indicator backend: fallback tray'
+INFO: 2021-01-01 22:07:11,185: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg, time: 1609510031.1857896'
+INFO: 2021-01-01 22:07:11,558: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1600, h:900, ratio:1.777778, iw:2508, ih:1300, scw:1736, sch:900, ho:68, vo:0'
+INFO: 2021-01-01 22:07:11,559: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:07' -fill white -annotate 0x0+128+110 '22:07' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01''
+INFO: 2021-01-01 22:07:11,559: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg -scale 1600x900^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:07' -fill white -annotate 0x0+128+110 '22:07' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01' /home/jay/.config/variety/wallpaper/wallpaper-clock-291f010098faae0ce6959c8b7f3a5853.jpg'
+INFO: 2021-01-01 22:07:11,902: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2021-01-01 22:07:11,908: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2021-01-01 22:07:12,186: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg, time: 1609510032.1861522'
+INFO: 2021-01-01 22:07:14,510: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:07:14,516: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-01-01 22:07:15,664: reload() 'Reloading preferences dialog'
+ERROR: 2021-01-01 22:07:15,664: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 794, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+ERROR: 2021-01-01 22:07:15,665: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 794, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+ERROR: 2021-01-01 22:07:15,667: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 794, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+INFO: 2021-01-01 22:07:16,289: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1600, h:900, ratio:1.777778, iw:2508, ih:1300, scw:1736, sch:900, ho:68, vo:0'
+INFO: 2021-01-01 22:07:16,290: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:07' -fill white -annotate 0x0+128+110 '22:07' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01''
+INFO: 2021-01-01 22:07:16,290: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg -scale 1600x900^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:07' -fill white -annotate 0x0+128+110 '22:07' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01' /home/jay/.config/variety/wallpaper/wallpaper-clock-91b83d1ced9da904256de4a6a6f94f71.jpg'
+ERROR: 2021-01-01 22:07:16,355: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fbb686fd430>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fbb686fd430>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1160, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.9/site-packages/variety/FlickrDownloader.py", line 161, in fill_queue
+    resp = FlickrDownloader.fetch(call)
+  File "/usr/lib/python3.9/site-packages/variety/FlickrDownloader.py", line 74, in fetch
+    return Util.fetch_json(call)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fbb686fd430>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+INFO: 2021-01-01 22:07:16,508: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:07:16,509: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-01-01 22:07:16,804: prepare_thread() 'After search prepared buffer contains 95 images'
+INFO: 2021-01-01 22:07:17,358: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-01-01 22:07:17,359: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-01-01 22:07:17,359: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-01-01 22:07:17,359: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-01-01 22:07:17,359: download_one() 'NASA Astro Pic of the Day: Downloading an image, config: None'
+INFO: 2021-01-01 22:07:17,359: download_one() 'NASA Astro Pic of the Day: Queue size: 0'
+INFO: 2021-01-01 22:07:17,359: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-01-01 22:07:17,359: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-01-01 22:07:17,360: download_one() 'NASA Astro Pic of the Day: Filling queue'
+INFO: 2021-01-01 22:07:17,360: fill_queue() 'Filling APOD queue from Archive'
+INFO: 2021-01-01 22:07:18,805: trigger_download() 'Triggering download thread to check if download needed'
+ERROR: 2021-01-01 22:07:23,155: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 420, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 464, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1106: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 385, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='apod.nasa.gov', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1160, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.9/site-packages/variety/plugins/builtin/downloaders/APODDownloader.py", line 59, in fill_queue
+    s = Util.html_soup(self.ROOT_URL + "archivepix.html")
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 648, in html_soup
+    return bs4.BeautifulSoup(Util.fetch(url, data, **request_kwargs), "lxml")
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 636, in fetch
+    return Util.request(url, data, **request_kwargs).text
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 677, in send
+    history = [resp for resp in gen]
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 677, in <listcomp>
+    history = [resp for resp in gen]
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 237, in resolve_redirects
+    resp = self.send(
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='apod.nasa.gov', port=443): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:07:24,160: get_throttling() 'Bing: parsing serverside options'
+INFO: 2021-01-01 22:07:24,161: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2021-01-01 22:07:24,161: get_throttling() 'Bing: parsing serverside options'
+INFO: 2021-01-01 22:07:24,161: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2021-01-01 22:07:24,161: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2021-01-01 22:07:24,161: download_one() 'Bing: Queue size: 0'
+INFO: 2021-01-01 22:07:24,161: get_throttling() 'Bing: parsing serverside options'
+INFO: 2021-01-01 22:07:24,161: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2021-01-01 22:07:24,161: download_one() 'Bing: Filling queue'
+INFO: 2021-01-01 22:07:24,517: download_one() 'Bing: Queue populated with 8 URLs'
+INFO: 2021-01-01 22:07:24,518: save_locally() 'Origin URL: https://www.bing.com/search?q=%E5%8D%A2%E5%A1%9E%E6%81%A9%E8%80%81%E5%9F%8E&form=hpcapt&mkt=zh-cn'
+INFO: 2021-01-01 22:07:24,518: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.LucerneHoliday_ZH-CN8762232954_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2021-01-01 22:07:24,518: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/Bing/OHR.LucerneHoliday_ZH-CN8762232954_1920x1080.jpg'
+INFO: 2021-01-01 22:07:24,518: save_locally() 'File already exists, skip downloading'
+INFO: 2021-01-01 22:07:25,520: get_throttling() 'Unsplash.com: parsing serverside options'
+INFO: 2021-01-01 22:07:25,520: get_throttling() 'Could not parse Unsplash.com serverside options, using defaults 10, 1'
+INFO: 2021-01-01 22:07:25,521: get_throttling() 'Unsplash.com: parsing serverside options'
+INFO: 2021-01-01 22:07:25,521: get_throttling() 'Could not parse Unsplash.com serverside options, using defaults 10, 1'
+INFO: 2021-01-01 22:07:25,521: download_one() 'Unsplash.com: Downloading an image, config: None'
+INFO: 2021-01-01 22:07:25,521: download_one() 'Unsplash.com: Queue size: 0'
+INFO: 2021-01-01 22:07:25,521: get_throttling() 'Unsplash.com: parsing serverside options'
+INFO: 2021-01-01 22:07:25,521: get_throttling() 'Could not parse Unsplash.com serverside options, using defaults 10, 1'
+INFO: 2021-01-01 22:07:25,521: download_one() 'Unsplash.com: Filling queue'
+INFO: 2021-01-01 22:07:25,522: fill_queue() 'Filling Unsplash queue from https://api.unsplash.com/photos/random?count=30&client_id=072e5048dfcb73a8d9ad59fcf402471518ff8df725df462b0c4fa665f466515a&orientation=landscape'
+INFO: 2021-01-01 22:07:31,113: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+INFO: 2021-01-01 22:07:31,123: download_one() 'Unsplash.com: Queue populated with 30 URLs'
+INFO: 2021-01-01 22:07:31,123: save_locally() 'Origin URL: https://unsplash.com/photos/XQxTKU6Ie5s?utm_source=Variety+Wallpaper+Changer&utm_medium=referral'
+INFO: 2021-01-01 22:07:31,123: save_locally() 'Image URL: https://images.unsplash.com/photo-1607021145278-5ffe2777fd7e?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxMjIxfDB8MXxyYW5kb218fHx8fHx8fA&ixlib=rb-1.2.1&q=85&w=1980'
+INFO: 2021-01-01 22:07:31,123: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/Unsplash/photo-1607021145278-5ffe2777fd7e.jpg'
+ERROR: 2021-01-01 22:07:36,129: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:07:36,347: save_locally() 'Download failed from image URL: https://images.unsplash.com/photo-1607021145278-5ffe2777fd7e?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxMjIxfDB8MXxyYW5kb218fHx8fHx8fA&ixlib=rb-1.2.1&q=85&w=1980 (source location: https://unsplash.com) '
+ERROR: 2021-01-01 22:07:36,347: safe_unlink() 'Could not delete /home/jay/.config/variety/Downloaded/Unsplash/photo-1607021145278-5ffe2777fd7e.jpg.partial, ignoring'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 420, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 464, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1106: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 385, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='images.unsplash.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 233, in save_locally
+    r = Util.request(
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='images.unsplash.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 886, in safe_unlink
+    os.unlink(filepath)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jay/.config/variety/Downloaded/Unsplash/photo-1607021145278-5ffe2777fd7e.jpg.partial'
+ERROR: 2021-01-01 22:07:36,349: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 420, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 464, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1106: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 385, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='images.unsplash.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1160, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 153, in download_one
+    return self.download_queue_item(queue_item)
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 107, in download_queue_item
+    return self.save_locally(origin_url, image_url, extra_metadata=extra_metadata)
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 244, in save_locally
+    raise e
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 233, in save_locally
+    r = Util.request(
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='images.unsplash.com', port=443): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:07:37,351: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2021-01-01 22:07:37,352: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2021-01-01 22:07:37,352: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2021-01-01 22:07:37,352: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2021-01-01 22:07:37,352: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2021-01-01 22:07:37,352: download_one() 'Earth View: Queue size: 0'
+INFO: 2021-01-01 22:07:37,352: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2021-01-01 22:07:37,353: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2021-01-01 22:07:37,353: download_one() 'Earth View: Filling queue'
+INFO: 2021-01-01 22:07:39,514: download_one() 'Earth View: Queue populated with 1511 URLs'
+INFO: 2021-01-01 22:07:39,514: save_locally() 'Origin URL: https://earthview.withgoogle.com/1741'
+INFO: 2021-01-01 22:07:39,514: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/1741.jpg'
+INFO: 2021-01-01 22:07:39,514: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/Earth View/Belo Horizonte, Brazil (ID-1741).jpg'
+INFO: 2021-01-01 22:07:40,010: save_locally() 'Download complete'
+INFO: 2021-01-01 22:07:40,010: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:07:40,011: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-01-01 22:07:40,012: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/Earth View/Belo Horizonte, Brazil (ID-1741).jpg to unseen_downloads'
+INFO: 2021-01-01 22:08:00,957: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2021-01-01 22:08:00,958: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg, time: 1609510080.9582083'
+INFO: 2021-01-01 22:08:00,964: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1600, h:900, ratio:1.777778, iw:2508, ih:1300, scw:1736, sch:900, ho:68, vo:0'
+INFO: 2021-01-01 22:08:00,965: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:08' -fill white -annotate 0x0+128+110 '22:08' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01''
+INFO: 2021-01-01 22:08:00,965: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg -scale 1600x900^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:08' -fill white -annotate 0x0+128+110 '22:08' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01' /home/jay/.config/variety/wallpaper/wallpaper-clock-ec43fa9e42531383ac3be2f27398e2ce.jpg'
+INFO: 2021-01-01 22:08:01,155: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:08:01,156: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-01-01 22:08:06,162: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2021-01-01 22:08:11,175: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:08:41,190: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2021-01-01 22:08:46,201: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:09:00,015: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2021-01-01 22:09:00,016: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg, time: 1609510140.0160458'
+INFO: 2021-01-01 22:09:00,017: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1600, h:900, ratio:1.777778, iw:2508, ih:1300, scw:1736, sch:900, ho:68, vo:0'
+INFO: 2021-01-01 22:09:00,018: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:09' -fill white -annotate 0x0+128+110 '22:09' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01''
+INFO: 2021-01-01 22:09:00,018: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg -scale 1600x900^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:09' -fill white -annotate 0x0+128+110 '22:09' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01' /home/jay/.config/variety/wallpaper/wallpaper-clock-b52d03420c1d06efa0d6b8174e735879.jpg'
+INFO: 2021-01-01 22:09:00,212: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:09:00,213: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-01-01 22:09:16,230: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2021-01-01 22:09:21,242: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:09:51,247: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2021-01-01 22:09:56,258: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 531, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3.9/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Read timed out. (read timeout=5)
+INFO: 2021-01-01 22:10:00,078: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2021-01-01 22:10:00,079: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg, time: 1609510200.0795972'
+INFO: 2021-01-01 22:10:00,081: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1600, h:900, ratio:1.777778, iw:2508, ih:1300, scw:1736, sch:900, ho:68, vo:0'
+INFO: 2021-01-01 22:10:00,081: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:10' -fill white -annotate 0x0+128+110 '22:10' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01''
+INFO: 2021-01-01 22:10:00,081: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg -scale 1600x900^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:10' -fill white -annotate 0x0+128+110 '22:10' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01' /home/jay/.config/variety/wallpaper/wallpaper-clock-938d1f54b703999889de028332cad682.jpg'
+INFO: 2021-01-01 22:10:00,272: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:10:00,273: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-01-01 22:10:41,014: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-01-01 22:10:41,014: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-01-01 22:10:41,014: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-01-01 22:10:41,015: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-01-01 22:10:41,015: download_one() 'Flickr: Downloading an image, config: user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2021-01-01 22:10:41,015: download_one() 'Flickr: Queue size: 0'
+INFO: 2021-01-01 22:10:41,015: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-01-01 22:10:41,015: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-01-01 22:10:41,015: download_one() 'Flickr: Filling queue'
+INFO: 2021-01-01 22:10:41,016: fetch() 'Making flickr API call: https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00'
+ERROR: 2021-01-01 22:10:46,032: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3.9/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.9/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fbb40676070>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.9/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fbb40676070>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/variety/VarietyWindow.py", line 1160, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.9/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.9/site-packages/variety/FlickrDownloader.py", line 161, in fill_queue
+    resp = FlickrDownloader.fetch(call)
+  File "/usr/lib/python3.9/site-packages/variety/FlickrDownloader.py", line 74, in fetch
+    return Util.fetch_json(call)
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.9/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fbb40676070>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+INFO: 2021-01-01 22:10:47,037: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-01-01 22:10:47,037: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-01-01 22:10:47,037: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-01-01 22:10:47,038: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-01-01 22:10:47,038: download_one() 'NASA Astro Pic of the Day: Downloading an image, config: None'
+INFO: 2021-01-01 22:10:47,038: download_one() 'NASA Astro Pic of the Day: Queue size: 0'
+INFO: 2021-01-01 22:10:47,038: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-01-01 22:10:47,038: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-01-01 22:10:47,038: download_one() 'NASA Astro Pic of the Day: Filling queue'
+INFO: 2021-01-01 22:10:47,038: fill_queue() 'Filling APOD queue from Archive'
+INFO: 2021-01-01 22:11:00,140: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2021-01-01 22:11:00,141: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg, time: 1609510260.1413906'
+INFO: 2021-01-01 22:11:00,143: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1600, h:900, ratio:1.777778, iw:2508, ih:1300, scw:1736, sch:900, ho:68, vo:0'
+INFO: 2021-01-01 22:11:00,143: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:11' -fill white -annotate 0x0+128+110 '22:11' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01''
+INFO: 2021-01-01 22:11:00,143: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg -scale 1600x900^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:70'` -pointsize 70 -gravity SouthEast -fill '#00000044' -annotate 0x0+126+108 '22:11' -fill white -annotate 0x0+128+110 '22:11' -font `fc-match -f '%{file[0]}' 'Sans:20'` -pointsize 20 -fill '#00000044' -annotate 0x0+126+58 'Friday, January 01' -fill white -annotate 0x0+128+60 'Friday, January 01' /home/jay/.config/variety/wallpaper/wallpaper-clock-b8b716b2452b6ae92debc8a1735d3272.jpg'
+INFO: 2021-01-01 22:11:00,335: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/nasa_apod/a11pan1040226lftsm.jpg'
+INFO: 2021-01-01 22:11:00,336: list_files() 'More than 1 files in the folders, stop listing'
