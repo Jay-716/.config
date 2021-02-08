@@ -35,7 +35,7 @@
 	- gimp
 	- thunderbird
 	- virtualbox
-	- deepi	.com.qq.im
+	- deepin.com.qq.im
 	- electron-wechat
 	- steam
 	- netease-cloud-music
