@@ -193,17 +193,23 @@ bar {
 # Customed settings
 gaps inner 2
 new_window none
+#exec_always --no-startup-id "xmodmap ~/.config/xmodmap/keys.conf"
 exec_always --no-startup-id variety
 exec_always --no-startup-id "picom -b"
 #exec_always --no-startup-id "feh --bg-fill /usr/share/pixmaps/bing_wallpaper_ChuDangYa_1920x1080.jpg"
 exec_always --no-startup-id fcitx
+exec_always --no-startup-id "udiskie -ant"
 #exec_always --no-startup-id "bash /home/jay/.config/polybar/launch.sh"
-#exec_always --no-startup-id clash
+exec_always --no-startup-id clash
+exec_always --no-startup-id flameshot
 bindsym $mod+Shift+s exec "i3lock -i /usr/share/pixmaps/bing_wallpaper_LargestCave_1920x1080.png -u & systemctl suspend"
 bindsym $mod+Shift+p exec "shutdown now"
-bindsym $mod+Shift+f exec --no-startup-id google-chrome-stable
+bindsym $mod+Shift+f exec --no-startup-id firefox
+bindsym $mod+Shift+g exec --no-startup-id "firefox --private-window"
 bindsym $mod+Tab workspace number $ws1
-bindsym $mod+i exec "amixer set Master 5%- && $refresh_i3status"
-bindsym $mod+o exec "amixer set Master 5%+ && $refresh_i3status"
-bindsym $mod+p exec "bash ~/MyFiles/scripts/amixer_mute.sh && $refresh_i3status"
+bindsym $mod+i exec "amixer set Master 5%-"
+bindsym $mod+o exec "amixer set Master 5%+"
+bindsym $mod+p exec "bash ~/MyFiles/scripts/amixer_mute.sh"
 for_window [class="Steam"] floating enable
+for_window [class="vlc"] floating enable
+#for_window [class="Telegram"] floating enable
