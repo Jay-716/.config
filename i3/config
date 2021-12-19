@@ -207,6 +207,8 @@ bindsym $mod+Shift+h exec "systemctl hibernate"
 bindsym $mod+Shift+p exec "systemctl poweroff"
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+Shift+g exec --no-startup-id "firefox --private-window"
+bindsym $mod+m exec --no-startup-id "variety -n"
+bindsym $mod+n exec --no-startup-id "variety -p"
 bindsym $mod+Tab workspace number $ws1
 bindsym $mod+i exec "amixer set Master 5%-"
 bindsym $mod+o exec "amixer set Master 5%+"
