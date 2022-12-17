@@ -1,0 +1,41 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 32,
+    "modules-left": ["wlr/taskbar"],
+    //"modules-center": ["sway/window"],
+    "modules-right": ["battery", "memory", "cpu", "clock", "tray"],
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["🔋", "🔋"]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+     },
+    "cpu": {
+        "interval": 10,
+        "format": "CPU {usage}%"
+     },
+     "memory": {
+        "interval": 30,
+        "format": "MEM {percentage}%"
+     },
+     "wlr/taskbar": {
+     "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        //"ignore-list": [
+           //"Alacritty"
+        //],
+        "app_ids-mapping": {
+          "firefoxdeveloperedition": "firefox-developer-edition"
+        }
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    }
+}
