@@ -11,7 +11,7 @@
     //},
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 50,
             "warning": 30,
             "critical": 15
         },
@@ -24,7 +24,8 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+    	"format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d %a %H:%M}"
      },
     "cpu": {
         "interval": 5,
@@ -45,8 +46,10 @@
         //"format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            // "hands-free": "",
+            // "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
