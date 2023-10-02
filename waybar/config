@@ -3,12 +3,16 @@
     "position": "bottom",
     "height": 32,
     "modules-left": ["wlr/taskbar"],
-    //"modules-center": ["sway/window"],
     "modules-right": ["battery", "memory", "cpu", "pulseaudio", "clock", "tray"],
-    //"battery": {
-    //    "format": "{capacity}% {icon}",
-    //    "format-icons": ["🔋", "🔋"]
-    //},
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "minimize"
+    },
     "battery": {
         "states": {
             "good": 50,
@@ -16,11 +20,8 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
@@ -37,39 +38,21 @@
      },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
-        //"format": "{volume}% {icon} {format_source}",
-        "format": "{volume}% {icon}",
+        "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        //"format-source": "{volume}% ",
-        //"format-source-muted": "",
+        "format-bluetooth-muted": "󰝟 {icon} {format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            // "hands-free": "",
-            // "headset": "",
             "hands-free": "",
             "headset": "",
             "phone": "",
             "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
-     "wlr/taskbar": {
-     "format": "{icon}",
-        "icon-size": 20,
-        "icon-theme": "Numix-Circle",
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "on-click-middle": "close",
-        //"ignore-list": [
-           //"Alacritty"
-        //],
-        "app_ids-mapping": {
-          "firefoxdeveloperedition": "firefox-developer-edition"
-        }
     },
     "tray": {
         "icon-size": 18,
